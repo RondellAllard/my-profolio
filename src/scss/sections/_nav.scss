@@ -1,0 +1,26 @@
+@use '../variables/colors' as clr;
+@use '../variables/breakpoints' as bp;
+
+#navbar {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 5rem;
+  width: 100%;
+  top: 0;
+  background-image: linear-gradient(clr.$accent, clr.$primary);
+  ul {
+    display: flex;
+    flex-direction: row;
+    li {
+      margin: 2ch;
+      @media (min-width: bp.$medium) {
+        margin-right: 5ch;
+      }
+    }
+  }
+  @media (min-width: bp.$medium) {
+    justify-content: flex-end;
+  }
+}

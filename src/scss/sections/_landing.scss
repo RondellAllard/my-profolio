@@ -1,0 +1,24 @@
+@use '../variables/colors' as clr;
+@use '../variables/breakpoints' as bp;
+
+#welcome {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(to top, clr.$primary, clr.$primary, clr.$black);
+  color: clr.$font;
+  h1 {
+    font-size: 2.5rem;
+  }
+  .lead {
+    font-size: 1.3rem;
+  }
+  text-align: center;
+  @media (min-width: bp.$medium) {
+    h1 {
+      font-size: 3rem;
+    }
+  }
+}

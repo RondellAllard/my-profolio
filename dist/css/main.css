@@ -1,0 +1,128 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #303841;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: #f0f0f0;
+}
+
+li {
+  list-style-type: none;
+}
+
+#navbar {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 5rem;
+  width: 100%;
+  top: 0;
+  background-image: linear-gradient(#be3144, #303841);
+}
+#navbar ul {
+  display: flex;
+  flex-direction: row;
+}
+#navbar ul li {
+  margin: 2ch;
+}
+@media (min-width: 850px) {
+  #navbar ul li {
+    margin-right: 5ch;
+  }
+}
+@media (min-width: 850px) {
+  #navbar {
+    justify-content: flex-end;
+  }
+}
+
+#welcome {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(to top, #303841, #303841, #000);
+  color: #f0f0f0;
+  text-align: center;
+}
+#welcome h1 {
+  font-size: 2.5rem;
+}
+#welcome .lead {
+  font-size: 1.3rem;
+}
+@media (min-width: 850px) {
+  #welcome h1 {
+    font-size: 3rem;
+  }
+}
+
+#projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: #45567d;
+  text-align: center;
+}
+#projects h2 {
+  text-align: center;
+  font-size: 1.375rem;
+  color: #f0f0f0;
+  text-decoration: underline;
+  padding: 1em;
+  margin-top: 1em;
+}
+#projects h3 {
+  color: #f0f0f0;
+}
+
+#wordpress h2 {
+  font-size: 1.375rem;
+  color: #f0f0f0;
+  text-decoration: underline;
+  padding: 1em;
+  margin-top: 1em;
+  text-align: center;
+}
+
+.project-tile {
+  margin: 1rem;
+  width: 90%;
+}
+.project-tile img {
+  width: 100%;
+}
+.project-tile h3 {
+  background-color: #303841;
+  color: #f0f0f0;
+  font-weight: 500;
+  padding: 0.5rem;
+  margin-top: -0.1975rem;
+  text-align: center;
+}
+
+iframe {
+  border: none;
+  width: 300px;
+  height: 220px;
+}
+
+/*# sourceMappingURL=main.css.map */
