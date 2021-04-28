@@ -82,6 +82,13 @@ li {
   background-color: #45567d;
   text-align: center;
 }
+@media (min-width: 850px) {
+  #projects .projects {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+  }
+}
 #projects h2 {
   text-align: center;
   font-size: 1.375rem;
@@ -93,24 +100,19 @@ li {
 #projects h3 {
   color: #f0f0f0;
 }
-
-#wordpress h2 {
-  font-size: 1.375rem;
-  color: #f0f0f0;
-  text-decoration: underline;
-  padding: 1em;
-  margin-top: 1em;
-  text-align: center;
-}
-
-.project-tile {
+#projects .project-tile {
   margin: 1rem;
   width: 90%;
 }
-.project-tile img {
+@media (min-width: 850px) {
+  #projects .project-tile {
+    width: 33%;
+  }
+}
+#projects .project-tile img {
   width: 100%;
 }
-.project-tile h3 {
+#projects .project-tile h3 {
   background-color: #303841;
   color: #f0f0f0;
   font-weight: 500;
@@ -119,10 +121,64 @@ li {
   text-align: center;
 }
 
-iframe {
+#wordpress {
+  margin-bottom: 5rem;
+}
+#wordpress iframe {
   border: none;
   width: 300px;
   height: 220px;
+}
+@media (min-width: 850px) {
+  #wordpress iframe {
+    width: 600px;
+    height: 450px;
+  }
+}
+#wordpress h2 {
+  font-size: 1.375rem;
+  color: #f0f0f0;
+  text-decoration: underline;
+  padding: 1em;
+  margin-top: 1em;
+  text-align: center;
+}
+#wordpress h3 {
+  color: #f0f0f0;
+  text-align: center;
+}
+
+#contact {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #f0f0f0;
+}
+#contact h2 {
+  text-decoration: underline;
+  margin: 2rem;
+}
+#contact .item {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+@media (min-width: 850px) {
+  #contact .item {
+    width: 60%;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+  #contact .item p,
+#contact .item h4 {
+    display: inline;
+  }
+}
+#contact a {
+  font-weight: 600;
 }
 
 /*# sourceMappingURL=main.css.map */
