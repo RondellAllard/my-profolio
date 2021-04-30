@@ -1,0 +1,13 @@
+@use '../variables/colors' as clr;
+
+#footer {
+  height: 5rem;
+  background-image: linear-gradient(clr.$primary, clr.$accent);
+  width: 100%;
+  a {
+    margin: 2rem;
+  }
+  i {
+    padding: 1rem;
+  }
+}

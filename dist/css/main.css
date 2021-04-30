@@ -181,4 +181,16 @@ li {
   font-weight: 600;
 }
 
+#footer {
+  height: 5rem;
+  background-image: linear-gradient(#303841, #be3144);
+  width: 100%;
+}
+#footer a {
+  margin: 2rem;
+}
+#footer i {
+  padding: 1rem;
+}
+
 /*# sourceMappingURL=main.css.map */
